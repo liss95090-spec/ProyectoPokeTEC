@@ -6,7 +6,7 @@ from tkinter import PhotoImage
 from tkinter import messagebox
 import random
 import json
-from os import path
+
 
 
 puntos_jugador = 0
