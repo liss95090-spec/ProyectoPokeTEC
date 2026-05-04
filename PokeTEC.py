@@ -37,14 +37,14 @@ lista_pokemones={
 # [Vida Máxima, Ataque, Defensa]
 stats_base = {
     "Pikachu":   {"hp_max": 125, "atq": 170, "def": 10},
-    "Charizard": {"hp_max": 180, "atq": 100, "def": 50},
+    "Charizard": {"hp_max": 180, "atq": 110, "def": 50},
     "Mewtow":    {"hp_max": 180, "atq": 110, "def": 60},
-    "Rayquaza":  {"hp_max": 200, "atq": 100, "def": 60},
-    "Infernape": {"hp_max": 180, "atq": 120, "def": 40},
+    "Rayquaza":  {"hp_max": 200, "atq": 110, "def": 60},
+    "Infernape": {"hp_max": 180, "atq": 130, "def": 40},
     "Milotic":   {"hp_max": 420, "atq": 60, "def": 100},
-    "Dragapult": {"hp_max": 180, "atq": 120, "def": 40},
-    "Froslass":  {"hp_max": 170, "atq": 150, "def": 20},
-    "Zoroark":   {"hp_max": 180, "atq": 120, "def": 40},
+    "Dragapult": {"hp_max": 180, "atq": 130, "def": 40},
+    "Froslass":  {"hp_max": 170, "atq": 160, "def": 20},
+    "Zoroark":   {"hp_max": 180, "atq": 140, "def": 40},
     "Garganacl": {"hp_max": 480, "atq": 40, "def": 100}
 }
 
@@ -263,7 +263,7 @@ def ir_a_combate():
     canvas_batalla = Canvas(ventana, width=1300, height=664, highlightthickness=0)
     canvas_batalla.pack(fill="both", expand=True)
 
-    #  FONDO
+    #  FONDO EN LA PANTALLA DE COMBATE
     ventana.img_fondo_combate = cargar_img('fondocombate.png') 
     canvas_batalla.create_image(0, 0, anchor=NW, image=ventana.img_fondo_combate)
 
